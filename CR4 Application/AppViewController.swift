@@ -66,66 +66,58 @@ class AppViewController: UIViewController {
             //first input
             if (contentName1.text != "" && share1.text != "") {
                 data[contentName1.text!] = Double(share1.text!)
-            } else if (contentName1.text == "" && share1.text != "") {
+            } else if (contentName1.text != "" || share1.text != "") {
                 errorMsg.text = "Fill in a pair of blanks."
-            } else if (contentName1.text != "" && share1.text == "") {
-                errorMsg.text = "Fill in a pair of blanks."
+                return
             }
             //second input
             if (contentName2.text != "" && share2.text != "") {
                 data[contentName2.text!] = Double(share2.text!)
-            } else if (contentName2.text == "" && share2.text != "") {
+            } else if (contentName2.text != "" || share2.text != "") {
                 errorMsg.text = "Fill in a pair of blanks."
-            } else if (contentName2.text != "" && share2.text == "") {
-                errorMsg.text = "Fill in a pair of blanks."
+                return
             }
             //third input
             if (contentName3.text != "" && share3.text != "") {
                 data[contentName3.text!] = Double(share3.text!)
-            } else if (contentName3.text == "" && share3.text != "") {
+            } else if (contentName3.text != "" || share3.text != "") {
                 errorMsg.text = "Fill in a pair of blanks."
-            } else if (contentName3.text != "" && share3.text == "") {
-                errorMsg.text = "Fill in a pair of blanks."
+                return
             }
             //fourth input
             if (contentName4.text != "" && share4.text != "") {
                 data[contentName4.text!] = Double(share4.text!)
-            }  else if (contentName4.text == "" && share4.text != "") {
+            }  else if (contentName4.text != "" || share4.text != "") {
                 errorMsg.text = "Fill in a pair of blanks."
-            } else if (contentName4.text != "" && share4.text == "") {
-                errorMsg.text = "Fill in a pair of blanks."
+                return
             }
             //fifith input
             if (contentName5.text != "" && share5.text != "") {
                 data[contentName5.text!] = Double(share5.text!)
-            } else if (contentName5.text == "" && share5.text != "") {
+            } else if (contentName5.text != "" || share5.text != "") {
                 errorMsg.text = "Fill in a pair of blanks."
-            } else if (contentName5.text != "" && share5.text == "") {
-                errorMsg.text = "Fill in a pair of blanks."
+                return
             }
             //sixth input
             if (contentName6.text != "" && share6.text != "") {
                 data[contentName6.text!] = Double(share6.text!)
-            } else if (contentName6.text == "" && share6.text != "") {
+            } else if (contentName6.text != "" || share6.text != "") {
                 errorMsg.text = "Fill in a pair of blanks."
-            } else if (contentName6.text != "" && share6.text == "") {
-                errorMsg.text = "Fill in a pair of blanks."
+                return
             }
             //seventh input
             if (contentName7.text != "" && share7.text != "") {
                 data[contentName7.text!] = Double(share7.text!)
-            } else if (contentName7.text == "" && share7.text != "") {
+            } else if (contentName7.text != "" || share7.text != "") {
                 errorMsg.text = "Fill in a pair of blanks."
-            } else if (contentName7.text != "" && share7.text == "") {
-                errorMsg.text = "Fill in a pair of blanks."
+                return
             }
             //eighth input
             if (contentName8.text != "" && share8.text != "") {
                 data[contentName8.text!] = Double(share8.text!)
-            } else if (contentName8.text == "" && share8.text != "") {
+            } else if (contentName8.text != "" || share8.text != "") {
                 errorMsg.text = "Fill in a pair of blanks."
-            } else if (contentName8.text != "" && share8.text == "") {
-                errorMsg.text = "Fill in a pair of blanks."
+                return
             }
             
             let sortedData = data.sorted(by: sortCompanyData)
